@@ -1,10 +1,10 @@
-function maxDefaites( portefeuille, mise, coeff ) {
+function maxLose( portefeuille, bet, multiplicator ) {
     let  i = 0
-    let tout = 0
-    while ( tout < portefeuille ) {
-        tout = tout + mise
+    let all = 0
+    while ( all < portefeuille ) {
+        all = all + bet
         i++
-        mise = mise * coeff
+        bet = bet * multiplicator
     }
     return i
 }
